@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch conditional statement</title>
+  </head>
+  <body>
+    <script>
+      let question = Number(
+        prompt(
+          "1.volume of cuboid \n 2.perimeter of squre \n 3.smallest of 2 numbers \n 4.negative numbers \n 5.biggest of 3 numbers"
+        )
+      );
+
+      switch (question) {
+        case 1:
+          let l = prompt("enter the l value");
+          let b = prompt("enter the b value");
+          let h = prompt("enter the h value");
+          let d = l * b * h;
+          console.log(`volume of cuboid ${d}`);
+          break;
+
+        case 2:
+          let a = prompt("enter the a value");
+          let ans = 4 * a;
+          console.log(`perimeter of squre ${ans}`);
+          break;
+
+        case 3:
+          let num1 = Number(prompt("enter the num1 value"));
+          let num2 = Number(prompt("enter the num2 value"));
+          if (num1 < num2) {
+            console.log(`${num1} is smallest number of ${num2}`);
+          } else {
+            console.log(`${num2} is smallest number of ${num1}`);
+          }
+        case 4:
+          let get = prompt("enter the number");
+          if (get > 0) {
+            console.log(`${get} number is positive number`);
+          } else if (get == 0) {
+            console.log("its zero");
+          } else {
+            console.log(`${get} number is Negative number`);
+          }
+        case 5:
+          let num_1 = prompt("enter the number1");
+          let num_2 = prompt("enter the number2");
+          let num_3 = prompt("enter the number3");
+          if((num_1>num_2)&&(num_1>num_3)){
+           console.log(`${num_1} is biggest number of num2&num3`)
+          }
+          else if((num_2>num_1)&&(num_2>num_3)){
+           console.log(`${num_2} is biggest number of num1&num3`)
+          }
+          else {
+             console.log(`${num_3} is biggest number of num2&num1`)
+          }
+          }
+
+    </script>
+  </body>
+</html>
